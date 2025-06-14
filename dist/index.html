@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Задания на if, switch, for, while, массивы </h1>
+
+    <div class="block">
+        <h2>1. Возраст</h2>
+        <input type="number" id="ageInput" placeholder="Введите возраст" />
+        <button id="ageBtn">Показать</button>
+        <p id="ageOutput"></p>
+    </div>
+
+    <div class="block">
+        <h2>2. Кол-во дней в месяце</h2>
+        <input type="number" id="monthInput" placeholder="Введите номер месяца" />
+        <button id="monthBtn">Узнать</button>
+        <p id="monthOutput"></p>
+    </div>
+
+    <div class="block">
+        <h2>3. Играем ли в бадминтон?</h2>
+        <label>День недели:
+            <select id="day">
+                <option>понедельник</option>
+                <option>вторник</option>
+                <option>среда</option>
+                <option>четверг</option>
+                <option>пятница</option>
+                <option>суббота</option>
+                <option selected>воскресенье</option>
+            </select>
+        </label><br/>
+
+        <label>Температура:
+            <select id="temp">
+                <option>жарко</option>
+                <option selected>тепло</option>
+                <option>холодно</option>
+            </select>
+        </label><br/>
+
+        <label>Осадки:
+            <select id="weather">
+                <option selected>ясно</option>
+                <option>облачно</option>
+                <option>дождь</option>
+                <option>снег</option>
+                <option>град</option>
+            </select>
+        </label><br/>
+
+        <label>Ветер:
+            <select id="wind">
+                <option selected>нет</option>
+                <option>есть</option>
+            </select>
+        </label><br/>
+
+        <label>Влажность:
+            <select id="humidity">
+                <option selected>низкая</option>
+                <option>высокая</option>
+            </select>
+        </label><br/>
+
+        <button id="playBtn">Решить</button>
+        <p id="playOutput"></p>
+    </div>
+
+    <div class="block">
+        <h3>1. Квадратный корень (метод Герона)</h3>
+        <input type="number" id="sqrtInput" placeholder="Введите число">
+        <button onclick="calculateSqrt()">Вычислить</button>
+        <p id="sqrtResult"></p>
+
+        <h3>2. Решето Эратосфена</h3>
+        <input type="number" id="primeInput" placeholder="Введите предел">
+        <button   button onclick="findPrimes()">Найти простые</button>
+        <p id="primeResult"></p>
+
+        <h3>3. Пирамида на canvas</h3>
+        <input type="number" id="pyramidHeight" placeholder="Высота пирамиды">
+        <button onclick="drawPyramid()">Нарисовать</button>
+        <canvas id="pyramidCanvas" width="300" height="300"></canvas>
+    </div>
+
+    <div class="block">
+        <h2>1. Количество чисел, равных максимуму</h2>
+        <input id="inputMaxCount" placeholder="Введите числа через запятую" />
+        <button id="btnMaxCount">Рассчитать</button>
+        <p id="outputMaxCount"></p>
+
+        <h2>2. Найти медиану массива</h2>
+        <input id="inputMedian" placeholder="Введите числа через запятую" />
+        <button id="btnMedian">Найти медиану</button>
+        <p id="outputMedian"></p>
+
+        <h2>3. Сортировка</h2>
+        <input id="inputMergeSort" placeholder="Введите числа через запятую" />
+        <button id="btnMergeSort">Сортировать</button>
+        <p id="outputMergeSort"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

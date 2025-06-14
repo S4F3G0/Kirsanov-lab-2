@@ -1,0 +1,33 @@
+body {
+    font-family: sans-serif;
+    background: #f7f7f7;
+    padding: 2em;
+}
+
+.block {
+    background: white;
+    padding: 1em;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+    max-width: 500px;
+}
+
+input, select, button {
+    padding: 0.5em;
+    margin: 0.3em 0;
+    font-size: 1em;
+}
+
+button {
+    cursor: pointer;
+}
+
+p {
+    font-weight: bold;
+    color: #333;
+}
+
+canvas {
+    border: 1px solid black;
+    margin-top: 10px;
+}
